@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "DM  Sans";
+  src: url("./assets/fonts/static/DMSans-Medium.ttf") format(("truetype"));
+  font-weight: 400, 500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --Purple1: hsl(254, 88%, 90%);
+  --Purple2: hsl(256, 67%, 59%);
+
+  --Yellow1: hsl(31, 66%, 93%);
+  --Yellow2: hsl(39, 100%, 71%);
+
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body {
+  margin: 0;
+  background-color: var(--Purple1);
+}
+
+.bento {
+  width: min(100% - 2rem, 70rem);
+  margin: 3rem auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.bento__card {
+  min-height: 10rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background-color: white;
+}
+
+.bento__card--tall {
+  min-height: 15rem;
+  /* background-color: aqua; */
+}
+
+/* Footer */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -11,41 +11,83 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Bento grid</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 0.6875rem;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <section class="bento-section">
-      <article class="bento-card">
-        Social Media 10x Faster with AI Over 4,000 5-star reviews
+    <section class="bento">
+      <article class="bento__card bento__card--wider">
+        <p class="card__first--title">
+          Social Media <span class="card__first--highlight">10x</span> Faster
+          with AI
+        </p>
+        <img
+          src="./assets/images/illustration-five-stars.webp"
+          alt="5-star reviews"
+          class="card__first--img"
+        />
+        <p class="card__first--desc">Over 4,000 5-star reviews</p>
       </article>
-      <article class="bento-card">
-        Manage multiple accounts and platforms.
+      <article class="bento__card bento__card--square">
+        <img
+          src="./assets/images/illustration-multiple-platforms.webp"
+          alt="multiple platform instagram and twitter"
+          class="card__second--img"
+        />
+        <p class="card__second--desc">
+          Manage multiple accounts and platforms.
+        </p>
       </article>
-      <article class="bento-card">
-        Maintain a consistent posting schedule.
+      <article class="bento__card bento__card--square">
+        <p class="card__third--title">
+          Maintain a consistent posting schedule.
+        </p>
+        <img
+          src="./assets/images/illustration-consistent-schedule.webp"
+          class="card__third--img"
+        />
       </article>
-      <article class="bento-card">
-        Schedule to social media.Optimize post timings to publish content at the
-        perfect time for your audience.
+      <article class="bento__card bento__card--taller">
+        <p class="card__fourth--title">Schedule to social media.</p>
+        <img
+          src="./assets/images/illustration-schedule-posts.webp"
+          class="card__fourth--img"
+        />
+        <p class="card__fourth--desc">
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
       </article>
-      <article class="bento-card">
-        Grow followers with non-stop content.
+      <article class="bento__card bento__card--wide">
+        <img
+          src="./assets/images/illustration-grow-followers.webp"
+          class="card__fifth--img"
+        />
+        <p class="card__fifth--title">Grow followers with non-stop content.</p>
       </article>
-      <article class="bento-card">>56% faster audience growth</article>
-      <article class="bento-card">Create and schedule content quicker.</article>
-      <article class="bento-card">Write your content using AI.</article>
+      <article class="bento__card bento__card--square">
+        <span class="card__sixth--percentage">>56% </span>
+        <p class="card__sixth--desc">faster audience growth</p>
+        <img
+          src="./assets/images/illustration-audience-growth.webp"
+          class="card__sixth--img"
+        />
+      </article>
+      <article class="bento__card bento__card--tall">
+        <p class="card__seventh--title">
+          Create and schedule content
+          <span class="card__seventh--highlight">quicker.</span>
+        </p>
+        <img src="./assets/images/illustration-create-post.webp" />
+      </article>
+      <article class="bento__card bento__card--tall">
+        <p class="card__eighth--title">Write your content using AI.</p>
+        <img
+          src="./assets/images/illustration-ai-content.webp"
+          class="card__eighth--img"
+        />
+      </article>
     </section>
 
     <footer class="attribution">
