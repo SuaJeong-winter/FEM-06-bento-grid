@@ -4,6 +4,13 @@
   font-weight: 400, 500;
 }
 
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/static/DMSans-MediumItalic.ttf") format("truetype");
+  font-weight: 400, 500;
+  font-style: italic;
+}
+
 *,
 *::before,
 *::after {
@@ -24,34 +31,86 @@
 
 body {
   margin: 0;
-  background-color: var(--Purple1);
+  background-color: #f4f5f7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .bento {
-  width: min(100% - 2rem, 70rem);
-  margin: 3rem auto;
-
+  width: calc(100% - 2rem, 25.875rem);
+  margin: 1.5rem auto;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 .bento__card {
-  min-height: 10rem;
-  padding: 1.5rem;
+  min-height: 8rem;
+  padding: 1rem;
   border-radius: 1.25rem;
   background-color: white;
+  margin: 0;
 }
 
-.bento__card--tall {
-  min-height: 15rem;
-  /* background-color: aqua; */
+.card__first {
+  background-color: var(--Purple2);
+
+  color: white;
+  text-align: center;
+}
+
+.card__first--title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.card__first--highlight {
+  color: var(--Yellow2);
+}
+
+.card__first--img {
+  padding: 0 4rem;
+}
+
+.card__first--desc {
+  font-size: 1.5rem;
+}
+
+.card__third {
+  background-color: var(--Yellow2);
+  padding: 1rem 1rem 0 1rem;
+}
+.card__third--title {
+  margin: 0;
+}
+.card__third--img {
+  margin-top: 0.5rem;
+  width: 70%;
+}
+
+.card__fourth {
+  background-color: var(--Purple1);
+  text-align: center;
+}
+
+.card__fourth--desc {
+  font-size: 1.2rem;
 }
 
 /* Footer */
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
