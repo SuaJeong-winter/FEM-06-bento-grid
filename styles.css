@@ -48,6 +48,7 @@ img {
   gap: 1.5rem;
   font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .bento__card {
@@ -104,6 +105,60 @@ img {
 
 .card__fourth--desc {
   font-size: 1.2rem;
+}
+
+.card__fifth {
+  background-color: var(--Purple2);
+}
+
+.card__fifth--img {
+  width: 70%;
+  height: 55%;
+  justify-self: center;
+}
+
+.card__fifth--title {
+  color: var(--White);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card__sixth--percentage {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.card__sixth--desc {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.card__sixth--img {
+  width: 60%;
+}
+
+.card__seventh {
+  background-color: var(--Yellow1);
+  font-size: 2rem;
+}
+
+.card__seventh--highlight {
+  color: var(--Purple2);
+}
+
+.card__seventh--img {
+  width: 60%;
+}
+
+.card__eighth {
+  background-color: var(--Yellow2);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.card__eighth--img {
+  width: 70%;
 }
 
 /* Footer */
